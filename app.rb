@@ -10,6 +10,10 @@ class App < Sinatra::Base
     erb :create_puppy
   end
   
+  get '/new' do
+    "Should I build this??"
+  end
+  
   post '/puppy' do
     @name =params[:name]
     @breed = params[:breed]
