@@ -11,7 +11,7 @@ class App < Sinatra::Base
   end
   
   get '/new' do
-    "Should I build this??"
+    erb :create_puppy
   end
   
   post '/puppy' do
